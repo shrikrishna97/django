@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <h2>new years bolte !!</h2>
+    <h2>year: {{year}}</h2>
+    <h2>day: {{day}}</h2>
+    {% load static %}
+    <a href="{% static 'stati.txt' %}"> click me</a>
+    <form action="/genrate/">
+        {% csrf_token %}
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Enter number</label>
+        <input type="number" name="num" class="form-control" id="exampleFormControlInput1" placeholder="1">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Enter table number</label>
+        <input type="number" name="upto" class="form-control" id="exampleFormControlInput1" placeholder="1">
+    </div>
+    <input type="submit" />
+</form>
+{% endblock %}
