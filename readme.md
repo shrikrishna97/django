@@ -54,5 +54,3 @@ Now, you have a Django project set up with a virtual environment. You can start 
 Note: Ensure that you activate the virtual environment (`source env/bin/activate`) before running Django commands to ensure the project uses the correct dependencies.
 
 --- 
-
-You can save this document in a file with a ".md" extension (e.g., "django_setup.md") for easy readability using Markdown formatting.
